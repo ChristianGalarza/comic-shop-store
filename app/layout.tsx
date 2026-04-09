@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar.component";
+import Footer from "./components/layout/Footer.component";
 
 // Puedes cambiar esta fuente luego si lo deseas
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Navbar />
         {/* Aquí se renderizarán todas tus páginas */}
         <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

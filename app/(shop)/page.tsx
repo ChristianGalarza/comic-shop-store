@@ -1,18 +1,26 @@
 "use client";
 
 import Hero from "../components/layout/Hero.component";
+import InventoryCTA from "../components/shop/InventoryCTA.component";
+import MonthlySelection from "../components/shop/MonthlySelection.component";
+import NewArrivals from "../components/shop/NewArrivals.component";
+import UpcomingReleases from "../components/shop/Upcoming.component";
 
 export default function ShopPage() {
   return (
     <div className="flex flex-col">
       <Hero />
+      {/* Sección de productos */}
+      <NewArrivals />
 
-      {/* Próxima sección: Novedades / Grid de Productos */}
-      <section id="novedades" className="py-24 px-6 md:px-12 bg-background">
-        <div className="max-w-7xl mx-auto">
-          {/* Aquí irá el Grid de cómics */}
-        </div>
-      </section>
+      {/* Banner de búsqueda/inventario */}
+      <InventoryCTA />
+
+      {/* Seccion proximos lanzamientos */}
+      <UpcomingReleases />
+
+      {/* Esenciales / Selección de la casa */}
+      <MonthlySelection />
     </div>
   );
 }
