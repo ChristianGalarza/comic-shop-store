@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from "../components/layout/Hero.component";
 import InventoryCTA from "../components/shop/InventoryCTA.component";
 import MonthlySelection from "../components/shop/MonthlySelection.component";

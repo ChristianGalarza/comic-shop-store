@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import { Plus } from "lucide-react";
 import { Comic } from "@/types/Comic.model";
 
 export default function ProductCard({ comic }: { comic: Comic }) {
+  console.log("COMIC", comic);
   return (
     <div className="group cursor-pointer">
       <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2">
